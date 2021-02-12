@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lexend+Mega&display=swap');
+.card{
+    display: inline-block;
+    box-shadow: 4px 8px 8px silver;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+}
+img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+.container{
+    padding: 2px 16px;
+    text-align: center;
+    background-color: hsla(144, 100%, 50%, 0.5);
+    font-size: 16px;
+    line-height: 1em;
+    /* ใช้ margin -5px = ค่าdefault ของ inline-block กรณีนี้เป็น top */
+}
+
+.card > img{
+    display: block;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    /* ใช้ display block ในการย่นระยะ margin เพราะไม่มี margin */
+}
+.container{
+padding: 2px 16px;
+text-align: center;
+background-color:  rgba(255,106,0,0.939);
+color: #ffffff;
+font-weight: 700;
+}
+/* ใช้สีbackgound แก้ไปเลย */
+/* background มี fuction ที่ใช้รูปภาพเป็นพื้นหลังโดย url */
+body::after{
+  content: "";
+  background : url(http://picsum.photos/id/1033/1024);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+/* ทำให้รูปภาพที่เอามาใช้เป็น background เบลอ (หลอกตา) */
+html{
+    font-family: "Teko", sans-serif;
+}
+p{
+    font-family: "Dancing Script",Tekko, sans-serif;
+}
+
