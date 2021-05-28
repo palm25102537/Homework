@@ -756,7 +756,7 @@ const sales = [
 //   }
 //   return acc
 // }, [])
-// console.log(result)
+
 //6.หายอดรวมของการจ่ายแต่ละประเภท
 // const result = sales.reduce((acc, item) => {
 //   const { product: { unitPrice, name, model }, discount, type } = item
